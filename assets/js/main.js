@@ -79,10 +79,10 @@
 
 				breakpoints.on('>medium', function() {
 
-					$header.css('background-position', 'left 0px');
+					$header.css('background-position', '-250px 0px');
 
 					$window.on('scroll.strata_parallax', function() {
-						$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+						$header.css('background-position', '-250px ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
 					});
 
 				});
@@ -109,7 +109,7 @@
 					usePopupDefaultStyling: false,
 					usePopupEasyClose: false,
 					usePopupNav: true,
-					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+					windowMargin: (breakpoints.active('<=medium') ? 0 : 50)
 				});
 
 			});

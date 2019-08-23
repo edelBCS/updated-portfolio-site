@@ -2591,13 +2591,14 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #1f1815;
+		background-color: #353c35;
 		background-attachment: scroll,								scroll;
 		background-image: url("images/overlay.png"), url("../../images/side-bg.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								300%;
-		color: rgba(255, 255, 255, 0.5);
+		background-blend-mode: luminosity;
+		color: rgba(255, 255, 255, 0.75);
 		height: 100%;
 		left: 0;
 		padding: 8em 4em;
@@ -2997,6 +2998,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
+				background-size: cover;
 				padding: 6em 3em 3em 3em;
 				width: 30%;
 			}
@@ -3055,7 +3057,7 @@ input, select, textarea {
 			#header {
 				background-attachment: scroll;
 				background-position: top left, center center;
-				background-size: auto,		cover;
+				background-size: cover,		cover;
 				left: auto;
 				padding: 6em 4em;
 				position: relative;
